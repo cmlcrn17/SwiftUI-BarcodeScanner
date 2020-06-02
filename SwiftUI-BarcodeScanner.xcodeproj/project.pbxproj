@@ -14,6 +14,7 @@
 		14BABE8724864B63004536D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BABE8624864B63004536D1 /* Preview Assets.xcassets */; };
 		14BABE8A24864B63004536D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BABE8824864B63004536D1 /* LaunchScreen.storyboard */; };
 		14BABE9624864DE4004536D1 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 14BABE9524864DE4004536D1 /* CodeScanner */; };
+		14FB573B2486818E00393CFA /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 14FB573A2486818E00393CFA /* CarBode */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14BABE9624864DE4004536D1 /* CodeScanner in Frameworks */,
+				14FB573B2486818E00393CFA /* CarBode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,7 @@
 			name = "SwiftUI-BarcodeScanner";
 			packageProductDependencies = (
 				14BABE9524864DE4004536D1 /* CodeScanner */,
+				14FB573A2486818E00393CFA /* CarBode */,
 			);
 			productName = "SwiftUI-BarcodeScanner";
 			productReference = 14BABE7A24864B62004536D1 /* SwiftUI-BarcodeScanner.app */;
@@ -126,6 +129,7 @@
 			mainGroup = 14BABE7124864B62004536D1;
 			packageReferences = (
 				14BABE9424864DE4004536D1 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				14FB57392486818E00393CFA /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
 			);
 			productRefGroup = 14BABE7B24864B62004536D1 /* Products */;
 			projectDirPath = "";
@@ -360,6 +364,14 @@
 				minimumVersion = 1.0.6;
 			};
 		};
+		14FB57392486818E00393CFA /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -367,6 +379,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 14BABE9424864DE4004536D1 /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		14FB573A2486818E00393CFA /* CarBode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14FB57392486818E00393CFA /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
+			productName = CarBode;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
