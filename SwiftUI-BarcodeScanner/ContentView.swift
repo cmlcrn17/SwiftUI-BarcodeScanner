@@ -7,11 +7,33 @@
 //
 
 import SwiftUI
+import CodeScanner
+
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+    
+    @State private var isShowingScanner = false
+    
+    private func handleScan(result: Result<String, CodeScannerView.ScanError>) {
+       self.isShowingScanner = false
+       switch result {
+       case .success(let data):
+           print("Success with \(data)")
+       case .failure(let error):
+           print("Scanning failed \(error)")
+       }
     }
+    
+     var body: some View {
+           Button(action: {
+               self.isShowingScanner = true
+           }) {
+               Text("Show Scanner")
+           }
+           .sheet(isPresented: $isShowingScanner) {
+               CodeScannerView(codeTypes: [.qr], simulatedData: "Some simulated data", completion: self.handleScan)
+           }
+       }
 }
 
 struct ContentView_Previews: PreviewProvider {

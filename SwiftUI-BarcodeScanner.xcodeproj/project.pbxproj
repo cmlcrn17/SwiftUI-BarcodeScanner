@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		14BABE8424864B63004536D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BABE8324864B63004536D1 /* Assets.xcassets */; };
 		14BABE8724864B63004536D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BABE8624864B63004536D1 /* Preview Assets.xcassets */; };
 		14BABE8A24864B63004536D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BABE8824864B63004536D1 /* LaunchScreen.storyboard */; };
+		14BABE9624864DE4004536D1 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 14BABE9524864DE4004536D1 /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BABE9624864DE4004536D1 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-BarcodeScanner";
+			packageProductDependencies = (
+				14BABE9524864DE4004536D1 /* CodeScanner */,
+			);
 			productName = "SwiftUI-BarcodeScanner";
 			productReference = 14BABE7A24864B62004536D1 /* SwiftUI-BarcodeScanner.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 14BABE7124864B62004536D1;
+			packageReferences = (
+				14BABE9424864DE4004536D1 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 14BABE7B24864B62004536D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14BABE9424864DE4004536D1 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14BABE9524864DE4004536D1 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14BABE9424864DE4004536D1 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14BABE7224864B62004536D1 /* Project object */;
 }
