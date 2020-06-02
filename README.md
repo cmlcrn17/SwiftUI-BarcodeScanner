@@ -2,8 +2,6 @@
 
 <br>
 
-<br>
-
 1. Github üzerinde yayınlanmış olan CodeScanner kütüphanesini proje içerisine import edin. (File - Swift Package)
 
 2. info.plist dosyasına kamera kullanım iznini ekleyin. (Privacy - Camera Usage Description - Açıklama Metni)
