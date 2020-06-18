@@ -9,9 +9,12 @@
 import SwiftUI
 import CodeScanner
 import CarBode
-
+import CoreImage.CIFilterBuiltins
 
 struct ContentView: View {
+    
+    let context = CIContext()
+    let filter = CIFilter.qrCodeGenerator()
     
     @State private var isShowingScanner = false
     @State var torceIsOn = false
@@ -26,9 +29,33 @@ struct ContentView: View {
         }
     }
     
+    @State private var name = "Ceren"
+    @State private var emailAddress = "https://medium.com/@cmlcrn17"
+    
+    func generateQRCode(from string: String) -> UIImage {
+        let data = Data(string.utf8)
+        filter.setValue(data, forKey: "inputMessage")
+
+        if let outputImage = filter.outputImage {
+            if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
+                return UIImage(cgImage: cgimg)
+            }
+        }
+
+        return UIImage(systemName: "xmark.circle") ?? UIImage()
+    }
+    
     var body: some View {
         
         VStack(alignment: .center ){
+            
+            Image(uiImage: generateQRCode(from: "\(name)\n\(emailAddress)"))
+            .interpolation(.none) //netlik sağlar
+            .resizable()
+            .scaledToFit()
+            .frame(width: 200, height: 200)
+            
+            
             
             Button(action: {
                 self.isShowingScanner = true
@@ -57,7 +84,6 @@ struct ContentView: View {
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
