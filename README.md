@@ -21,3 +21,10 @@
 <br>
 
 ![QR Image Oluşturmak ve QR Read](https://github.com/cmlcrn17/SwiftUI-BarcodeScanner/blob/master/Images/QRImageAndRead.png)
+
+<br>
+
+<br>
+
+![Console Read Value](
+https://github.com/cmlcrn17/SwiftUI-BarcodeScanner/blob/master/Images/Read.png)
