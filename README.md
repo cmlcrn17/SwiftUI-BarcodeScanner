@@ -12,12 +12,12 @@
 
 <br>
 
-![QR Image Oluşturmak ve QR Read](https://github.com/cmlcrn17/SwiftUI-BarcodeScanner/blob/master/Images/QRImageAndRead.png)
-
-<br>
-
-<br>
-
 [Dependencies](https://github.com/twostraws/CodeScanner)
 
 [Stack Overflow](https://stackoverflow.com/questions/59632363/how-can-i-scan-and-read-qr-codes-in-swift-ui)
+
+<br>
+
+<br>
+
+![QR Image Oluşturmak ve QR Read](https://github.com/cmlcrn17/SwiftUI-BarcodeScanner/blob/master/Images/QRImageAndRead.png)
