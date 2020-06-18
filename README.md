@@ -14,10 +14,6 @@
 
 [Medium Makalesi](https://medium.com/@cmlcrn17/swiftui-qr-image-olu%C5%9Fturmak-ve-qr-okuma-5cb9d0043327)
 
-<br>
-
-<br>
-
 [Dependencies](https://github.com/twostraws/CodeScanner)
 
 [Stack Overflow](https://stackoverflow.com/questions/59632363/how-can-i-scan-and-read-qr-codes-in-swift-ui)
